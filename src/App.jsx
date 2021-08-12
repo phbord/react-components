@@ -75,12 +75,12 @@ function App() {
       <div className="container">
         <h3 className="mt-5">Formulaire</h3>
         <form onSubmit={handleSubmit}>
-          <InputText name="name1" value={state.name1} onChange={handleChange}>Nom</InputText>
-          <InputPassword name="pwd1" value={state.pwd1} onChange={handleChange}>Mot de passe</InputPassword>
-          <InputEmail name="email1" value={state.email1} onChange={handleChange}>Email</InputEmail>
-          <InputNumber name="num1" value={state.num1} onChange={handleChange}>Nombre</InputNumber>
-          <Textarea name="desc1" onChange={handleChange} label="Description">{state.desc1}</Textarea>
-          <InputCheckbox name="cb1" value={state.cb1} onChange={handleChange}>Bon pour accord</InputCheckbox>
+          <InputText name="name1" value={state.name1} onChange={handleChange}>Champ texte</InputText>
+          <InputPassword name="pwd1" value={state.pwd1} onChange={handleChange}>Champ mot de passe</InputPassword>
+          <InputEmail name="email1" value={state.email1} onChange={handleChange}>Champ email</InputEmail>
+          <InputNumber name="num1" value={state.num1} onChange={handleChange}>Champ nombre</InputNumber>
+          <Textarea name="desc1" onChange={handleChange} label="Textarea">{state.desc1}</Textarea>
+          <InputCheckbox name="cb1" value={state.cb1} onChange={handleChange}>Checkbox</InputCheckbox>
           <InputRadioDouble name="rb1" value1={state.rb1_1} value2={state.rb1_2} onChange={handleChange} label1="Oui" label2="Non" />
           <ButtonSubmit>Envoyer</ButtonSubmit>
         </form>
